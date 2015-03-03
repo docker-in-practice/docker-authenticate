@@ -1,6 +1,7 @@
 upstream docker {
   server unix:/var/run/docker.sock;
 }
+
 server {
   listen 2375 default_server;
   location / {
