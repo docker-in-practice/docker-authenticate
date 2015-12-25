@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:8.2
 RUN apt-get update && apt-get install -y nginx apache2-utils
 RUN htpasswd -c /etc/nginx/.htpasswd username
 RUN htpasswd -b /etc/nginx/.htpasswd username password
